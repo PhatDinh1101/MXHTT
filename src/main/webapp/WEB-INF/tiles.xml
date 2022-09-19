@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Nhập"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp"/>
+    </definition>
+     <definition name="profile" extends="baseLayout">
+        <put-attribute name="title" value="Trang cá nhân"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/profile.jsp"/>
+    </definition>
+    <definition name="profileDetailReports" extends="baseLayout">
+        <put-attribute name="title" value="Trang cá nhânsssss"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/profile-report.jsp"/>
+    </definition>
+    <definition name="chat" extends="baseLayout">
+        <put-attribute name="title" value="chatting"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/chat.jsp"/>
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng Ký"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp"/>
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="post" extends="baseLayout">
+        <put-attribute name="title" value="Them bai viet" />
+        <put-attribute name="content" value="/WEB-INF/jsp/post.jsp" />
+    </definition>
+    <definition name="detail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiet bai dau gia" />
+        <put-attribute name="content" value="/WEB-INF/jsp/detail.jsp" />
+    </definition>
+    <definition name="page404" extends="baseLayout">
+        <put-attribute name="title" value="404 PAGE NOT FOUND" />
+        <put-attribute name="content" value="/WEB-INF/jsp/page404.jsp" />
+    </definition>
+    
+    <definition name="baseAdminLayout" template="/WEB-INF/layout/baseadmin.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="left"
+                       value="/WEB-INF/layout/adminleft.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="" />
+    </definition>
+    <definition name="admin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Quan ly" />
+<!--        <put-attribute name="content" value="/WEB-INF/jsp/admin.jsp" />-->
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/admin.jsp" />
+    </definition>
+    <definition name="stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê " />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/stats.jsp" />
+    </definition>
+    <definition name="post-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê ngày" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/post-stats.jsp" />
+    </definition>
+    <definition name="report" extends="baseAdminLayout">
+        <put-attribute name="title" value="Report" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/admin-report.jsp" />
+    </definition>
+</tiles-definitions>
